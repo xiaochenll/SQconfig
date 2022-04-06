@@ -1,0 +1,41 @@
+[
+  	{
+		"type": "field",
+		"port": "",
+		"outboundTag": "direct",
+		"ip": [
+			"geoip:cloudflare"
+		]
+	},
+    	{
+		"type": "field",
+		"port": "",
+		"outboundTag": "direct",
+		"domain": [
+      "geosite:apple-cn",
+      "geosite:category-games@cn",
+      "geosite:google-cn"
+		]
+	},
+	{
+		"type": "field",
+		"port": "",
+		"outboundTag": "proxy",
+		"domain": [
+			"geosite:geolocation-!cn"
+		]
+	},
+	{
+		"type": "field",
+		"port": "",
+		"outboundTag": "proxy",
+		"ip": [
+			"geoip:telegram"
+		]
+	},
+	{
+		"type": "field",
+		"port": "0-65535",
+		"outboundTag": "direct"
+	}
+]
