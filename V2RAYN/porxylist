@@ -50,11 +50,7 @@
         "inboundTag": [],
         "outboundTag": "direct",
         "domain": [
-          "apple.com",
-          "hostloc.com",
-          "mox.moe",
           "wc3818290.home.blog",
-          "xcailn.xyz",
           "yealicositemarkethome.files.wordpress.com"
         ],
         "enabled": true
