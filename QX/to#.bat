@@ -4,7 +4,7 @@ set file=D:\Advertising.list
 set file_tmp=D:\Advertising_tmp.list
 set file_bak=D:\Advertising_bak.list
 
-set source1="HOST,bytedance.com,Advertising"
+set source1=HOST,bytedance.com,Advertising
 set source2=HOST,p3.pstatp.com,Advertising
 set source3=HOST,sf3-ttcdn-tos.pstatp.com,Advertising
 set source4=HOST,sf6-ttcdn-tos.pstatp.com,Advertising
