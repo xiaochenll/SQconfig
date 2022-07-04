@@ -1,6 +1,7 @@
 #by 28413761
 #https://github.com/28413761/QX/blob/main/fenliu.list
 #-https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/QuantumultX/Advertising/Advertising.list
+USER-AGENT,AVOS*,Advertising
 HOST,adsfile.bssdlbig.kugou.com,Advertising
 HOST,indivi-cdn.shouji.sogou.com/wapdl/hole,Advertising
 HOST,tmeadcomm.y.qq.com,Advertising
