@@ -82,7 +82,7 @@
 
 		ahci {
 			pcie_root = "00:1c.2,00.0";
-			ata_port = <0x6>;
+			ata_port = <0x4>;
 		};
 
 		led_green {
@@ -101,7 +101,7 @@
 
 		ahci {
 			pcie_root = "00:1c.2,00.0";
-			ata_port = <0x7>;
+			ata_port = <0x5>;
 		};
 
 		led_green {
@@ -120,7 +120,7 @@
 
 		ahci {
 			pcie_root = "00:1c.2,00.0";
-			ata_port = <0x8>;
+			ata_port = <0x6>;
 		};
 
 		led_green {
@@ -139,7 +139,7 @@
 
 		ahci {
 			pcie_root = "00:1c.2,00.0";
-			ata_port = <0x9>;
+			ata_port = <0x7>;
 		};
 
 		led_green {
