@@ -1,2 +1,27 @@
 payload:
+  #目的域名后缀规则
+  #- DOMAIN-SUFFIX,bilibili.com,DIRECT,tcp   #【Meta专属】可指定协议类型(tcp/udp)  
+  #目的域名规则
+  #- DOMAIN,google.com,auto
+  #目的域名关键字规则
+  #- DOMAIN-KEYWORD,google,auto
+  #目的IP规则
+  #- IP-CIDR,122.122.0.0/8,DIRECT,no-resolve #no-resolve:不解析，可应用于GEOIP, IP-CIDR  
+  #来源IP规则
+  #- SRC-IP-CIDR,192.168.1.201/32,DIRECT
+  #目的端口规则
+  #- DST-PORT,123/136/137-139,DIRECT         #【Meta专属】可指定端口范围
+  #来源端口规则
+  #- SRC-PORT,123/136/137-139,DIRECT,udp     #【Meta专属】可指定端口范围
+  #【Meta专属】入站规则
+  #支持HTTP/HTTPS/SOCKS5/SOCKS4/SOCKS/TUN/TPROXY/REDIR/INNER
+  #- IN-TYPE,SOCKS5/HTTP,auto
+  #【Meta专属】逻辑判断规则
+  #- AND,((DOMAIN,baidu.com),(NETWORK,UDP)),DIRECT #AND(和):域名为baidu.com的UDP协议
+  #- OR,((NETWORK,UDP),(DOMAIN,baidu.com)),REJECT  #OR(或):UDP的协议，或者域名为baidu.com
+  #- NOT,((DOMAIN,baidu.com)),PROXY                #NOT(否)：域名不为baidu.com访问
+  #域名关键词为bilibili或者douyu的UDP协议
+  #- AND,((OR,((DOMAIN-KEYWORD,bilibili),(DOMAIN-KEYWORD,douyu))),(NETWORK,UDP)),REJECT 
   - DOMAIN-SUFFIX,openos.org
+  - DOMAIN-KEYWORD,btt
+  - DOMAIN-KEYWORD,xym
