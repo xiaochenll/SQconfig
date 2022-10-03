@@ -24,5 +24,6 @@ payload:
   #- AND,((OR,((DOMAIN-KEYWORD,bilibili),(DOMAIN-KEYWORD,douyu))),(NETWORK,UDP)),REJECT 
   - DOMAIN-SUFFIX,openos.org
   - DOMAIN-SUFFIX,xfltd.org
+  - DOMAIN-SUFFIX,btschool.club
   - DOMAIN-KEYWORD,btt
   - DOMAIN-KEYWORD,xym
