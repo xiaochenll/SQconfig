@@ -190,12 +190,12 @@
 	};
 
 	nvme_slot@1 {
-		pcie_root = "00:14.1";
+		pcie_root = "00:1c.1";
 		port_type = "ssdcache";
 	};
 
 	nvme_slot@2 {
-		pcie_root = "00:14.0";
+		pcie_root = "00:1c.3";
 		port_type = "ssdcache";
 	};
 };
