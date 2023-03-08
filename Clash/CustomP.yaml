@@ -22,6 +22,9 @@ payload:
   #- NOT,((DOMAIN,baidu.com)),PROXY                #NOT(否)：域名不为baidu.com访问
   #域名关键词为bilibili或者douyu的UDP协议
   #- AND,((OR,((DOMAIN-KEYWORD,bilibili),(DOMAIN-KEYWORD,douyu))),(NETWORK,UDP)),REJECT 
+  - DOMAIN-KEYWORD,btschool
+  - DOMAIN-KEYWORD,hddolby
+  - DOMAIN-KEYWORD,m-team
   - DOMAIN, www.indexxx.com
   - DOMAIN-SUFFIX,openos.org
-  - DOMAIN-SUFFIX,btschool.club
+  - DOMAIN-SUFFIX,bittorrent.org
