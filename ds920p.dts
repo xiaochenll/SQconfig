@@ -53,6 +53,38 @@
 				pmp_link = <0x4>;
 			};
 		};
+		
+		pmp_slot@6 {
+
+			libata {
+				EMID = <0x0>;
+				pmp_link = <0x5>;
+			};
+		};
+		
+		pmp_slot@7 {
+
+			libata {
+				EMID = <0x0>;
+				pmp_link = <0x6>;
+			};
+		};
+		
+		pmp_slot@8 {
+
+			libata {
+				EMID = <0x0>;
+				pmp_link = <0x7>;
+			};
+		};
+		
+		pmp_slot@9 {
+
+			libata {
+				EMID = <0x0>;
+				pmp_link = <0x8>;
+			};
+		};
 	};
 
       internal_slot@1 {
@@ -230,8 +262,8 @@
 	esata_port@1 {
 
 		ahci {
-			pcie_root = "00:13.0,00.0";
-			ata_port = <0x6>;
+			pcie_root = "00:20.0,00.0";
+			ata_port = <0x9>;
 		};
 	};
 
