@@ -45,6 +45,14 @@
 				pmp_link = <0x3>;
 			};
 		};
+		
+		pmp_slot@5 {
+
+			libata {
+				EMID = <0x0>;
+				pmp_link = <0x4>;
+			};
+		};
 	};
 
       internal_slot@1 {
