@@ -81,8 +81,8 @@
 		led_type = "lp3943";
 
 		ahci {
-			pcie_root = "00:1c.0,00.0";
-			ata_port = <0x1>;
+			pcie_root = "00:1c.1,00.0";
+			ata_port = <0x2>;
 		};
 
 		led_green {
@@ -100,8 +100,8 @@
 		led_type = "lp3943";
 
 		ahci {
-			pcie_root = "00:1c.0,00.0";
-			ata_port = <0x2>;
+			pcie_root = "00:1c.1,00.0";
+			ata_port = <0x3>;
 		};
 
 		led_green {
@@ -119,8 +119,8 @@
 		led_type = "lp3943";
 
 		ahci {
-			pcie_root = "00:1c.0,00.0";
-			ata_port = <0x3>;
+			pcie_root = "00:1c.1,00.0";
+			ata_port = <0x4>;
 		};
 
 		led_green {
@@ -138,8 +138,8 @@
 		led_type = "lp3943";
 
 		ahci {
-			pcie_root = "00:1c.0,00.0";
-			ata_port = <0x4>;
+			pcie_root = "00:1c.1,00.0";
+			ata_port = <0x5>;
 		};
 
 		led_green {
@@ -157,8 +157,8 @@
 		led_type = "lp3943";
 
 		ahci {
-			pcie_root = "00:1c.1,00.0";
-			ata_port = <0x2>;
+			pcie_root = "00:1c.0,00.0";
+			ata_port = <0x1>;
 		};
 
 		led_green {
@@ -176,8 +176,8 @@
 		led_type = "lp3943";
 
 		ahci {
-			pcie_root = "00:1c.1,00.0";
-			ata_port = <0x3>;
+			pcie_root = "00:1c.0,00.0";
+			ata_port = <0x2>;
 		};
 
 		led_green {
@@ -195,8 +195,8 @@
 		led_type = "lp3943";
 
 		ahci {
-			pcie_root = "00:1c.1,00.0";
-			ata_port = <0x4>;
+			pcie_root = "00:1c.0,00.0";
+			ata_port = <0x3>;
 		};
 
 		led_green {
@@ -214,8 +214,8 @@
 		led_type = "lp3943";
 
 		ahci {
-			pcie_root = "00:1c.1,00.0";
-			ata_port = <0x5>;
+			pcie_root = "00:1c.0,00.0";
+			ata_port = <0x4>;
 		};
 
 		led_green {
