@@ -45,15 +45,6 @@
 				pmp_link = <0x3>;
 			};
 		};
-
-		pmp_slot@5 {
-
-			libata {
-				EMID = <0x0>;
-				pmp_link = <0x4>;
-			};
-		};
-		
 	};
 
       internal_slot@1 {
@@ -82,8 +73,8 @@
 		led_type = "lp3943";
 
 		ahci {
-			pcie_root = "00:1c.1,00.0";
-			ata_port = <0x2>;
+			pcie_root = "00:1c.0,00.0";
+			ata_port = <0x1>;
 		};
 
 		led_green {
@@ -102,7 +93,7 @@
 
 		ahci {
 			pcie_root = "00:1c.1,00.0";
-			ata_port = <0x3>;
+			ata_port = <0x2>;
 		};
 
 		led_green {
@@ -121,7 +112,7 @@
 
 		ahci {
 			pcie_root = "00:1c.1,00.0";
-			ata_port = <0x4>;
+			ata_port = <0x3>;
 		};
 
 		led_green {
@@ -140,7 +131,7 @@
 
 		ahci {
 			pcie_root = "00:1c.1,00.0";
-			ata_port = <0x5>;
+			ata_port = <0x4>;
 		};
 
 		led_green {
@@ -158,8 +149,8 @@
 		led_type = "lp3943";
 
 		ahci {
-			pcie_root = "00:1c.0,00.0";
-			ata_port = <0x1>;
+			pcie_root = "00:1c.1,00.0";
+			ata_port = <0x5>;
 		};
 
 		led_green {
@@ -168,63 +159,6 @@
 
 		led_orange {
 			led_name = "syno_led11";
-		};
-	};
-	internal_slot@7 {
-		protocol_type = "sata";
-		power_pin_gpio = <0x20 0x0>;
-		detect_pin_gpio = <0x29 0x1>;
-		led_type = "lp3943";
-
-		ahci {
-			pcie_root = "00:1c.0,00.0";
-			ata_port = <0x2>;
-		};
-
-		led_green {
-			led_name = "syno_led12";
-		};
-
-		led_orange {
-			led_name = "syno_led13";
-		};
-	};
-	internal_slot@8 {
-		protocol_type = "sata";
-		power_pin_gpio = <0x21 0x0>;
-		detect_pin_gpio = <0x30 0x1>;
-		led_type = "lp3943";
-
-		ahci {
-			pcie_root = "00:1c.0,00.0";
-			ata_port = <0x3>;
-		};
-
-		led_green {
-			led_name = "syno_led14";
-		};
-
-		led_orange {
-			led_name = "syno_led15";
-		};
-	};
-	internal_slot@9 {
-		protocol_type = "sata";
-		power_pin_gpio = <0x22 0x0>;
-		detect_pin_gpio = <0x31 0x1>;
-		led_type = "lp3943";
-
-		ahci {
-			pcie_root = "00:1c.0,00.0";
-			ata_port = <0x4>;
-		};
-
-		led_green {
-			led_name = "syno_led16";
-		};
-
-		led_orange {
-			led_name = "syno_led17";
 		};
 	};
 	
