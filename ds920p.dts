@@ -1,60 +1,9 @@
 /dts-v1/;
 
 / {
-	compatible = "Synology";
-	model = "synology_geminilake_920+";
-	version = <0x1>;
-	syno_spinup_group = <0x2 0x1 0x1>;
-	syno_spinup_group_delay = <0xb>;
-	syno_hdd_powerup_seq = "true";
-	syno_cmos_reg_secure_flash = <0x66>;
-	syno_cmos_reg_secure_boot = <0x68>;
-
-	DX517 {
-		compatible = "Synology";
-		model = "synology_dx517";
-
-		pmp_slot@1 {
-
-			libata {
-				EMID = <0x0>;
-				pmp_link = <0x0>;
-			};
-		};
-
-		pmp_slot@2 {
-
-			libata {
-				EMID = <0x0>;
-				pmp_link = <0x1>;
-			};
-		};
-
-		pmp_slot@3 {
-
-			libata {
-				EMID = <0x0>;
-				pmp_link = <0x2>;
-			};
-		};
-
-		pmp_slot@4 {
-
-			libata {
-				EMID = <0x0>;
-				pmp_link = <0x3>;
-			};
-		};
-		
-		pmp_slot@5 {
-
-			libata {
-				EMID = <0x0>;
-				pmp_link = <0x4>;
-			};
-		};
-	};
-
+      compatible = "Synology";
+      model = "synology_geminilake_920+";
+	
       internal_slot@1 {
 		protocol_type = "sata";
 		power_pin_gpio = <0x14 0x0>;
@@ -167,44 +116,6 @@
 
 		led_orange {
 			led_name = "syno_led11";
-		};
-	};
-	
-	esata_port@1 {
-
-		ahci {
-			pcie_root = "00:20.0,00.0";
-			ata_port = <0x9>;
-		};
-	};
-
-	usb_slot@1 {
-
-		vbus {
-			syno_gpio = <0x1d 0x1>;
-		};
-
-		usb2 {
-			usb_port = "1-1";
-		};
-
-		usb3 {
-			usb_port = "2-1";
-		};
-	};
-
-	usb_slot@2 {
-
-		vbus {
-			syno_gpio = <0x1e 0x1>;
-		};
-
-		usb2 {
-			usb_port = "1-2";
-		};
-
-		usb3 {
-			usb_port = "2-2";
 		};
 	};
 
