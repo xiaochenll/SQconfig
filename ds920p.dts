@@ -213,66 +213,6 @@
 		};
 	};
 
-	internal_slot@7 {
-		protocol_type = "sata";
-		power_pin_gpio = <0x14 0x00>;
-		detect_pin_gpio = <0x23 0x01>;
-		led_type = "lp3943";
-
-		ahci {
-			pcie_root = "00:1c.0,00.0";
-			ata_port = <0x02>;
-		};
-
-		led_green {
-			led_name = "syno_led12";
-		};
-
-		led_orange {
-			led_name = "syno_led13";
-		};
-	};
-	
-	internal_slot@8 {
-		protocol_type = "sata";
-		power_pin_gpio = <0x14 0x00>;
-		detect_pin_gpio = <0x23 0x01>;
-		led_type = "lp3943";
-
-		ahci {
-			pcie_root = "00:1c.0,00.0";
-			ata_port = <0x03>;
-		};
-
-		led_green {
-			led_name = "syno_led14";
-		};
-
-		led_orange {
-			led_name = "syno_led15";
-		};
-	};
-	
-	internal_slot@9 {
-		protocol_type = "sata";
-		power_pin_gpio = <0x14 0x00>;
-		detect_pin_gpio = <0x23 0x01>;
-		led_type = "lp3943";
-
-		ahci {
-			pcie_root = "00:1c.0,00.0";
-			ata_port = <0x04>;
-		};
-
-		led_green {
-			led_name = "syno_led16";
-		};
-
-		led_orange {
-			led_name = "syno_led17";
-		};
-	};
-
 	nvme_slot@1 {
 		pcie_root = "00:1c.2,00.0";
 		port_type = "ssdcache";
