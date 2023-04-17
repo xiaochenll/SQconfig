@@ -141,7 +141,7 @@
 
 		ahci {
 			pcie_root = "00:1c.1,00.0";
-			ata_port = <0x00>;
+			ata_port = <0x02>;
 		};
 
 		led_green {
@@ -161,7 +161,7 @@
 
 		ahci {
 			pcie_root = "00:1c.1,00.0";
-			ata_port = <0x01>;
+			ata_port = <0x03>;
 		};
 
 		led_green {
@@ -181,7 +181,7 @@
 
 		ahci {
 			pcie_root = "00:1c.1,00.0";
-			ata_port = <0x02>;
+			ata_port = <0x04>;
 		};
 
 		led_green {
@@ -201,7 +201,7 @@
 
 		ahci {
 			pcie_root = "00:1c.1,00.0";
-			ata_port = <0x03>;
+			ata_port = <0x05>;
 		};
 
 		led_green {
@@ -215,7 +215,7 @@
 
 	internal_slot@7 {
 		protocol_type = "sata";
-		power_pin_gpio = <0x20 0x00>;
+		power_pin_gpio = <0x1a 0x00>;
 		detect_pin_gpio = <0x29 0x01>;
 		led_type = "lp3943";
 
@@ -235,8 +235,8 @@
 	
 	internal_slot@8 {
 		protocol_type = "sata";
-		power_pin_gpio = <0x21 0x00>;
-		detect_pin_gpio = <0x30 0x01>;
+		power_pin_gpio = <0x1b 0x00>;
+		detect_pin_gpio = <0x2a 0x01>;
 		led_type = "lp3943";
 
 		ahci {
@@ -255,8 +255,8 @@
 	
 	internal_slot@9 {
 		protocol_type = "sata";
-		power_pin_gpio = <0x22 0x00>;
-		detect_pin_gpio = <0x31 0x01>;
+		power_pin_gpio = <0x1c 0x00>;
+		detect_pin_gpio = <0x2b 0x01>;
 		led_type = "lp3943";
 
 		ahci {
